@@ -1,0 +1,365 @@
+body {
+  margin: 10px 100px;
+  font-family: "Poppins";
+}
+
+hr {
+  border: 3px solid #c9d9d2;
+  border-radius: 30px;
+}
+
+/* ----------------------------------------------Navbar Start---------------------------------------------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* font-size: 20; */
+}
+
+.nav-logo img {
+  width: 130px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #03314b;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #34d9bb;
+  color: #34d9bb;
+}
+
+nav .login-button {
+  width: 93px;
+  height: 40px;
+  background-color: #fff;
+  border: 2px solid #34d9bb;
+  border-radius: 12px;
+  color: #34d9bb;
+  font-weight: bold;
+  font-family: poppins;
+  cursor: pointer;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.search-form input[type="text"] {
+  padding: 8px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  background-color: #f4f4f4;
+  border: #287FDE;
+}
+nav .login-button:hover {
+  background-color: #34d9bb;
+  color: #fff;
+}
+
+nav .register-button {
+  width: 93px;
+  height: 40px;
+  background-color: #34d9bb;
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font-family: poppins;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav .register-button:hover {
+  background-color: #fff;
+  color: #34d9bb;
+  border: 2px solid #34d9bb;
+}
+
+/* ----------------------------------------------Navbar End---------------------------------------------- */
+
+/* ----------------------------------------------Hero Start---------------------------------------------- */
+.hero {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-text {
+  margin-left: 50px;
+  align-items: center;
+}
+
+.hero h1 {
+  color: #287FDE;
+  font-size: 50px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.hero-text2 {
+  color: #287FDE;
+  font-size: 50px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.hero-text p {
+  font-size: 20px;
+  font-weight: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #898e8c;
+}
+
+.hero-text button {
+  width: 250px;
+  height: 55px;
+  background-color: #287FDE;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hero-text button:hover {
+  background-color: #fff;
+  color: #287FDE;
+}
+
+.hero-image img {
+  width: 453px;
+  height: 372px;
+}
+
+/* ----------------------------------------------Partner End---------------------------------------------- */
+
+.partners {
+  padding: 50px 0;
+}
+
+.partner-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.partner {
+  width: 30%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.partners h1{
+  font-family: "poppins";
+  font-style: italic;
+  font-weight: bolder;
+  text-align: center;
+  color: #287FDE;
+  font-size: 30px ;
+}
+.partner img {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+/* ----------------------------------------------Partner End---------------------------------------------- */
+
+/* ----------------------------------------------Testimoni Start---------------------------------------------- */
+
+.testimoni {
+  padding: 140px;
+  position: relative;
+  margin-top: 20px;
+  margin-left: -70px;
+  margin-right: -70px;
+}
+
+.testimoni-text1{
+  color: #287FDE;
+  font-size: 50px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.testimoni h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.testimoni-slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 30px;
+  max-height: 450px;
+}
+
+.slider-open:checked + .slider-item {
+  position: static;
+  opacity: 100;
+  height: 50%;
+}
+
+.slider-item {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+  margin-top: 30px;
+  padding-left: 150px;
+  padding-right: 150px;
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+
+.slider-text {
+  padding-left: 20px;
+  margin-top: 50px;
+}
+
+.slider-img {
+  width: 300px;
+  height: 300px;
+ 
+}
+
+.slider-control {
+  background: #287FDE;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  font-size: 40px;
+  height: 40px;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  cursor: pointer;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+}
+
+.slider-control.prev {
+  left: 2%;
+}
+
+.slider-control.next {
+  right: 2%;
+}
+
+.slider-control:hover {
+  background: #fff;
+  color: #287FDE;
+}
+
+#slider-1:checked ~ .control-1,
+#slider-2:checked ~ .control-2,
+#slider-3:checked ~ .control-3 {
+  display: block;
+}
+
+.slider-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.slider-indicators li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slider-button {
+  color: #f18080;
+  cursor: pointer;
+  display: block;
+  font-size: 35px;
+}
+
+.slider-button:hover {
+  color: #aaaaaa;
+}
+
+#slider-1:checked
+  ~ .control-1
+  ~ .slider-indicators
+  li:nth-child(1)
+  .slider-button,
+#slider-2:checked
+  ~ .control-2
+  ~ .slider-indicators
+  li:nth-child(2)
+  .slider-button,
+#slider-3:checked
+  ~ .control-3
+  ~ .slider-indicators
+  li:nth-child(3)
+  .slider-button {
+  color: #428bca;
+}
+
+/* ----------------------------------------------Testimoni End---------------------------------------------- */
+
+.artikel {
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.artikel-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.artikel-item {
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.artikel-item .card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-text {
+  margin-top: 10px;
+}
